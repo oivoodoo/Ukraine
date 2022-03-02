@@ -3,8 +3,6 @@ import {
   EmailShareButton,
   FacebookIcon,
   FacebookShareButton,
-  LinkedinIcon,
-  LinkedinShareButton,
   TelegramIcon,
   TelegramShareButton,
   TwitterIcon,
@@ -47,11 +45,6 @@ export const ShareButtons = () => (
       >
         <WhatsappIcon size={32} round />
       </WhatsappShareButton>
-    </span>
-    <span className='mr-4'>
-      <LinkedinShareButton url='https://ukraine-two.vercel.app'>
-        <LinkedinIcon size={32} round />
-      </LinkedinShareButton>
     </span>
     <span className='mr-4'>
       <TwitterShareButton
@@ -273,19 +266,19 @@ export default function HomePage() {
           <div className='text-center'>
             <NextImage src='images/flag.svg' width={256} height={171} />
 
-            <h2 className='p-20 pb-0 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl'>
+            <h2 className='mt-10 px-10 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:px-20'>
               AYUDA HUMANITARIA A LOS RESIDENTES Y REFUGIADOS DE UCRANIA
             </h2>
           </div>
 
           <div className='mx-auto max-w-7xl p-4 sm:p-6 lg:p-8'>
             <div className='mb-8 text-center'>
-              <div className='mt-8 pb-4 text-xl tracking-tight text-gray-900 lg:text-xl'>
-                <h3 className='mt-8 pb-4 text-3xl font-bold tracking-tight text-gray-800 lg:text-3xl'>
+              <div className='mt-8 text-xl tracking-tight text-gray-900 lg:text-xl'>
+                <h3 className='mt-8 px-5 pb-4 text-xl font-bold tracking-tight text-gray-800 lg:px-5 lg:text-2xl'>
                   PUNTOS DE RECOGIDA
                 </h3>
 
-                <div className='mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-4'>
+                <div className='mx-auto mt-5 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-4'>
                   {addresses.map((address: AddressType, i: number) => (
                     <Address key={i} value={address} />
                   ))}
@@ -300,7 +293,7 @@ export default function HomePage() {
             <div className='bg-white'>
               <div className='mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:py-24 lg:px-8'>
                 <div className='mx-auto max-w-3xl text-center'>
-                  <h2 className='text-3xl font-extrabold text-gray-900'>
+                  <h2 className='text-xl font-extrabold text-gray-800 lg:text-2xl'>
                     LISTA DE LO MÁS NECESARIO
                   </h2>
                 </div>
