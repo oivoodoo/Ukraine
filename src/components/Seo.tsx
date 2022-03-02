@@ -69,7 +69,7 @@ export default function Seo(props: SeoProps) {
           <meta
             name='author'
             property='article:author'
-            content='Alexandr team@bitscorp.co'
+            content='Alexandr ( alex@bitscorp.co )'
           />
         </>
       )}

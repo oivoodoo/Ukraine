@@ -257,8 +257,7 @@ export const Address = ({ value }: { value: AddressType }) => {
 export default function HomePage() {
   return (
     <Layout>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+      <Seo date='2022' />
 
       <main className='relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28'>
         <section className='relative mx-auto max-w-7xl'>
