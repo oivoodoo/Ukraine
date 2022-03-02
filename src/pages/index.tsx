@@ -172,12 +172,12 @@ export const addresses = [
           className='mb-4 text-gray-900 underline hover:underline'
           href='https://goo.gl/maps/Kk5enhfd6qeCjtrJ7'
         >
-          C/d'Enric Bargés, 9, 08014 Barcelona (cerca de Sants Estació)
+          C/d&apos;Enric Bargés, 9, 08014 Barcelona (cerca de Sants Estació)
         </a>
       </div>
       <br />
-      Escuela Ucraniana Shevchenko /Asociación "Txervona Kalyna" (Yuliya
-      Dovgopola)
+      Escuela Ucraniana Shevchenko /Asociación &quot;Txervona Kalyna&quot;
+      (Yuliya Dovgopola)
       <br />
       <div className='mt-2'>
         Tel.{' '}
@@ -235,7 +235,7 @@ export const addresses = [
           className='mb-4 text-gray-900 underline hover:underline'
           href='https://goo.gl/maps/c6JC2BL8ozxUFfHZ8'
         >
-          C/Pont de Traball Digne, 15 
+          C/Pont de Traball Digne, 15
         </a>
       </div>
       <br />

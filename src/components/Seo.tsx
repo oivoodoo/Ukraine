@@ -5,12 +5,11 @@ import { openGraph } from '@/lib/helper';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
-  description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
+  title: 'AYUDA HUMANITARIA A LOS RESIDENTES Y REFUGIADOS DE UCRANIA',
+  siteName: 'AYUDA HUMANITARIA A LOS RESIDENTES Y REFUGIADOS DE UCRANIA',
+  description: 'AYUDA HUMANITARIA A LOS RESIDENTES Y REFUGIADOS DE UCRANIA',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  url: 'https://ukraine-two.vercel.app',
   type: 'website',
   robots: 'follow, index',
   /** No need to be filled, will be populated with openGraph function */
@@ -70,7 +69,7 @@ export default function Seo(props: SeoProps) {
           <meta
             name='author'
             property='article:author'
-            content='Theodorus Clarence'
+            content='Alexandr team@bitscorp.co'
           />
         </>
       )}
@@ -80,10 +79,7 @@ export default function Seo(props: SeoProps) {
         <link key={linkProps.href} {...linkProps} />
       ))}
       <meta name='msapplication-TileColor' content='#ffffff' />
-      <meta
-        name='msapplication-TileImage'
-        content='/favicon/ms-icon-144x144.png'
-      />
+      <meta name='msapplication-TileImage' content='/favicon/logo.ico' />
       <meta name='theme-color' content='#ffffff' />
     </Head>
   );
@@ -101,74 +97,74 @@ const favicons: Array<Favicons> = [
   {
     rel: 'apple-touch-icon',
     sizes: '57x57',
-    href: '/favicon/apple-icon-57x57.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '60x60',
-    href: '/favicon/apple-icon-60x60.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '72x72',
-    href: '/favicon/apple-icon-72x72.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '76x76',
-    href: '/favicon/apple-icon-76x76.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '114x114',
-    href: '/favicon/apple-icon-114x114.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '120x120',
-    href: '/favicon/apple-icon-120x120.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '144x144',
-    href: '/favicon/apple-icon-144x144.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '152x152',
-    href: '/favicon/apple-icon-152x152.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '180x180',
-    href: '/favicon/apple-icon-180x180.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '192x192',
-    href: '/favicon/android-icon-192x192.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '32x32',
-    href: '/favicon/favicon-32x32.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '96x96',
-    href: '/favicon/favicon-96x96.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '16x16',
-    href: '/favicon/favicon-16x16.png',
+    href: '/favicon/logo.ico',
   },
   {
     rel: 'manifest',
-    href: '/favicon/manifest.json',
+    href: '/favicon/logo.ico',
   },
 ];
