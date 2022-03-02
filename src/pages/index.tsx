@@ -21,58 +21,44 @@ import Seo from '@/components/Seo';
 
 export const ShareButtons = () => (
   <>
-    <span className='mr-4'>
-      <FacebookShareButton
-        url='https://ukraine-two.vercel.app'
-        quote='Ukraine: Aquellos que quieran colaborar'
-        hashtag='#ukraine'
-      >
-        <FacebookIcon size={32} round />
-      </FacebookShareButton>
-    </span>
-    <span className='mr-4'>
-      <TelegramShareButton
-        url='https://ukraine-two.vercel.app'
-        title='Ukraine: Aquellos que quieran colaborar'
-      >
-        <TelegramIcon size={32} round />
-      </TelegramShareButton>
-    </span>
-    <span className='mr-4'>
-      <WhatsappShareButton
-        url='https://ukraine-two.vercel.app'
-        title='Ukraine: Aquellos que quieran colaborar'
-      >
-        <WhatsappIcon size={32} round />
-      </WhatsappShareButton>
-    </span>
-    <span className='mr-4'>
-      <TwitterShareButton
-        url='https://ukraine-two.vercel.app'
-        title='Ukraine: Aquellos que quieran colaborar'
-      >
-        <TwitterIcon size={32} round />
-      </TwitterShareButton>
-    </span>
-
-    <span className='mr-4'>
-      <ViberShareButton
-        url='https://ukraine-two.vercel.app'
-        title='Ukraine: Aquellos que quieran colaborar'
-      >
-        <ViberIcon size={32} round />
-      </ViberShareButton>
-    </span>
-
-    <span className='mr-4'>
-      <EmailShareButton
-        url='https://ukraine-two.vercel.app'
-        subject='Ukraine: Aquellos que quieran colaborar'
-        body='Ukraine: Aquellos que quieran colaborar'
-      >
-        <EmailIcon size={32} round />
-      </EmailShareButton>
-    </span>
+    <FacebookShareButton
+      url='https://ukraine-two.vercel.app'
+      quote='Ukraine: Aquellos que quieran colaborar'
+      hashtag='#ukraine'
+    >
+      <FacebookIcon size={28} round />
+    </FacebookShareButton>
+    <TelegramShareButton
+      url='https://ukraine-two.vercel.app'
+      title='Ukraine: Aquellos que quieran colaborar'
+    >
+      <TelegramIcon size={28} round />
+    </TelegramShareButton>
+    <WhatsappShareButton
+      url='https://ukraine-two.vercel.app'
+      title='Ukraine: Aquellos que quieran colaborar'
+    >
+      <WhatsappIcon size={28} round />
+    </WhatsappShareButton>
+    <TwitterShareButton
+      url='https://ukraine-two.vercel.app'
+      title='Ukraine: Aquellos que quieran colaborar'
+    >
+      <TwitterIcon size={28} round />
+    </TwitterShareButton>
+    <ViberShareButton
+      url='https://ukraine-two.vercel.app'
+      title='Ukraine: Aquellos que quieran colaborar'
+    >
+      <ViberIcon size={28} round />
+    </ViberShareButton>
+    <EmailShareButton
+      url='https://ukraine-two.vercel.app'
+      subject='Ukraine: Aquellos que quieran colaborar'
+      body='Ukraine: Aquellos que quieran colaborar'
+    >
+      <EmailIcon size={28} round />
+    </EmailShareButton>
   </>
 );
 
@@ -119,16 +105,21 @@ const list = [
 
 export const addresses = [
   () => (
-    <div className='w-full'>
-      <div className='mb-4 text-center'>
+    <div className='flex w-full flex-col space-y-4'>
+      <div className='text-center'>
         <a
           className='self-center text-center text-gray-900 no-underline hover:underline'
           href='https://goo.gl/maps/qmVE1VNZGZRXN21Q6'
         >
-          <FiMapPin className='mx-auto text-center' width={32} height={32} />
+          <FiMapPin
+            className='mx-auto text-center'
+            size={28}
+            width={28}
+            height={28}
+          />
         </a>
       </div>
-      <div className='mb-2'>
+      <div>
         <a
           className='mb-4 text-gray-900 underline hover:underline'
           href='https://goo.gl/maps/qmVE1VNZGZRXN21Q6'
@@ -136,31 +127,33 @@ export const addresses = [
           Rambla Santa Monica, 9, Barcelona (iglesia)
         </a>
       </div>
-      <br />
-      Asociación “Djerelo”
-      <br />
-      <div className='mt-2'>
+      <div>Asociación “Djerelo”</div>
+      <div>
         Tel.{' '}
         <a href='tel:653347656' className='text-gray-900 underline'>
           653 347 656
         </a>{' '}
         (Olha Dzyuban)
       </div>
-      <br />
-      todos los días de 9:00 a 19.30 h
+      <div>Todos los días de 9:00 a 19.30 h</div>
     </div>
   ),
   () => (
-    <div className='w-full'>
-      <div className='mb-4 text-center'>
+    <div className='flex w-full flex-col space-y-4'>
+      <div className='text-center'>
         <a
           className='self-center text-center text-gray-900 no-underline hover:underline'
           href='https://goo.gl/maps/Kk5enhfd6qeCjtrJ7'
         >
-          <FiMapPin className='mx-auto text-center' width={32} height={32} />
+          <FiMapPin
+            className='mx-auto text-center'
+            size={28}
+            width={28}
+            height={28}
+          />
         </a>
       </div>
-      <div className='mb-2'>
+      <div>
         <a
           className='mb-4 text-gray-900 underline hover:underline'
           href='https://goo.gl/maps/Kk5enhfd6qeCjtrJ7'
@@ -168,31 +161,35 @@ export const addresses = [
           C/d&apos;Enric Bargés, 9, 08014 Barcelona (cerca de Sants Estació)
         </a>
       </div>
-      <br />
-      Escuela Ucraniana Shevchenko /Asociación &quot;Txervona Kalyna&quot;
-      (Yuliya Dovgopola)
-      <br />
-      <div className='mt-2'>
+      <div>
+        Escuela Ucraniana Shevchenko /Asociación &quot;Txervona Kalyna&quot;
+        (Yuliya Dovgopola)
+      </div>
+      <div>
         Tel.{' '}
         <a href='tel:616655630' className='text-gray-900 underline'>
           616 655 630
         </a>{' '}
       </div>
-      <br />
-      Todos los sábados de 15:00 a 18:00
+      <div>Todos los sábados de 15:00 a 18:00</div>
     </div>
   ),
   () => (
-    <div className='w-full'>
-      <div className='mb-4 text-center'>
+    <div className='flex w-full flex-col space-y-4'>
+      <div className='text-center'>
         <a
           className='self-center text-center text-gray-900 no-underline hover:underline'
           href='https://goo.gl/maps/2B2qSVFQc3QR82Kr6'
         >
-          <FiMapPin className='mx-auto text-center' width={32} height={32} />
+          <FiMapPin
+            className='mx-auto text-center'
+            size={28}
+            width={28}
+            height={28}
+          />
         </a>
       </div>
-      <div className='mb-2'>
+      <div>
         <a
           className='mb-4 text-gray-900 underline hover:underline'
           href='https://goo.gl/maps/2B2qSVFQc3QR82Kr6'
@@ -214,29 +211,31 @@ export const addresses = [
     </div>
   ),
   () => (
-    <div className='w-full'>
-      <div className='mb-4 text-center'>
+    <div className='flex w-full flex-col space-y-4'>
+      <div className='text-center'>
         <a
           className='self-center text-center text-gray-900 no-underline hover:underline'
           href='https://goo.gl/maps/c6JC2BL8ozxUFfHZ8'
         >
-          <FiMapPin className='mx-auto text-center' width={32} height={32} />
+          <FiMapPin
+            className='mx-auto text-center'
+            size={28}
+            width={28}
+            height={28}
+          />
         </a>
       </div>
-      <div className='mb-2'>
+      <div>
         <a
-          className='mb-4 text-gray-900 underline hover:underline'
+          className='text-gray-900 underline hover:underline'
           href='https://goo.gl/maps/c6JC2BL8ozxUFfHZ8'
         >
           C/Pont de Traball Digne, 15
         </a>
       </div>
-      <br />
-      Instituto Salvador Seguí (Sant Martí)
-      <br />
-      Escuela Ucraniana “Mriya” de lunes a sábado
-      <br />
-      8:00-18:00
+      <div>Instituto Salvador Seguí (Sant Martí)</div>
+      <div>Escuela Ucraniana “Mriya” de lunes a sábado</div>
+      <div>8:00-18:00</div>
     </div>
   ),
 ];
@@ -284,10 +283,10 @@ export default function HomePage() {
                   ))}
                 </div>
               </div>
+            </div>
 
-              <p className='mt-8'>
-                <ShareButtons />
-              </p>
+            <div className='my-10 space-x-4 text-center'>
+              <ShareButtons />
             </div>
 
             <div className='bg-white'>
