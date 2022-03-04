@@ -19,8 +19,8 @@ import Layout from '@/components/layout/Layout';
 import NextImage from '@/components/NextImage';
 import Seo from '@/components/Seo';
 
-export const ShareButtons = () => (
-  <>
+export const ShareButtonsSection = () => (
+  <div className='my-10 space-x-4 text-center'>
     <FacebookShareButton
       url='https://ukraine-two.vercel.app'
       quote='Ukraine: Aquellos que quieran colaborar'
@@ -59,7 +59,7 @@ export const ShareButtons = () => (
     >
       <EmailIcon size={28} round />
     </EmailShareButton>
-  </>
+  </div>
 );
 
 const list = [
@@ -254,6 +254,53 @@ export const Address = ({ value }: { value: AddressType }) => {
   );
 };
 
+export const AddressSection = () => {
+  return (
+    <div className='mb-8 text-center'>
+      <div className='mt-8 text-xl tracking-tight text-gray-900 lg:text-xl'>
+        <h3 className='mt-8 px-5 pb-4 text-xl font-bold tracking-tight text-gray-800 lg:px-5 lg:text-2xl'>
+          PUNTOS DE RECOGIDA
+        </h3>
+
+        <div className='mx-auto mt-5 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-4'>
+          {addresses.map((address: AddressType, i: number) => (
+            <Address key={i} value={address} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const ItemsSection = () => {
+  return (
+    <div className='bg-white'>
+      <div className='mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:py-24 lg:px-8'>
+        <div className='mx-auto max-w-3xl text-center'>
+          <h2 className='text-xl font-extrabold text-gray-800 lg:text-2xl'>
+            LISTA DE LO MÁS NECESARIO
+          </h2>
+        </div>
+        <dl className='mt-12 space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8'>
+          {list.map((feature) => (
+            <div key={feature.title} className='relative'>
+              <dt>
+                <FiCheck
+                  className='absolute h-6 w-6 text-green-500'
+                  aria-hidden='true'
+                />
+                <p className='ml-9 text-lg font-medium leading-6 text-gray-900'>
+                  {feature.title}
+                </p>
+              </dt>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+  );
+};
+
 export default function HomePage() {
   return (
     <Layout>
@@ -270,48 +317,11 @@ export default function HomePage() {
           </div>
 
           <div className='mx-auto max-w-7xl p-4 sm:p-6 lg:p-8'>
-            <div className='mb-8 text-center'>
-              <div className='mt-8 text-xl tracking-tight text-gray-900 lg:text-xl'>
-                <h3 className='mt-8 px-5 pb-4 text-xl font-bold tracking-tight text-gray-800 lg:px-5 lg:text-2xl'>
-                  PUNTOS DE RECOGIDA
-                </h3>
+            <ItemsSection />
 
-                <div className='mx-auto mt-5 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-4'>
-                  {addresses.map((address: AddressType, i: number) => (
-                    <Address key={i} value={address} />
-                  ))}
-                </div>
-              </div>
-            </div>
+            <ShareButtonsSection />
 
-            <div className='my-10 space-x-4 text-center'>
-              <ShareButtons />
-            </div>
-
-            <div className='bg-white'>
-              <div className='mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:py-24 lg:px-8'>
-                <div className='mx-auto max-w-3xl text-center'>
-                  <h2 className='text-xl font-extrabold text-gray-800 lg:text-2xl'>
-                    LISTA DE LO MÁS NECESARIO
-                  </h2>
-                </div>
-                <dl className='mt-12 space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8'>
-                  {list.map((feature) => (
-                    <div key={feature.title} className='relative'>
-                      <dt>
-                        <FiCheck
-                          className='absolute h-6 w-6 text-green-500'
-                          aria-hidden='true'
-                        />
-                        <p className='ml-9 text-lg font-medium leading-6 text-gray-900'>
-                          {feature.title}
-                        </p>
-                      </dt>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            </div>
+            <AddressSection />
           </div>
         </section>
       </main>
