@@ -3,6 +3,7 @@ import * as React from 'react';
 import { AddressesSection } from '@/components/bits/home/AddressesSection';
 import { ItemsSection } from '@/components/bits/home/ItemsSection';
 import { ShareButtonsSection } from '@/components/bits/ShareButtonsSection';
+import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
@@ -31,6 +32,8 @@ export default function HomePage() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </Layout>
   );
 }

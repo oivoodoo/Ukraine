@@ -23,7 +23,7 @@ const list: ItemType[] = [
   {
     title: 'Ropa / calzados de mujer, hombre, niños',
     description:
-      'Ropa muy necesaria y elementos esenciales para recién nacidos, fórmula infantil.',
+      'Ropa muy necesaria y elementos esenciales para recién nacidos, ropa interior solo nueva',
   },
   { title: 'Agua' },
   { title: 'Platos desechable' },
