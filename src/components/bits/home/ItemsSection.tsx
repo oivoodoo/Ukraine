@@ -1,16 +1,32 @@
 import * as React from 'react';
 import { FiCheck } from 'react-icons/fi';
 
-const list = [
-  { title: 'Ropa / calzados de mujer, hombre, niños' },
-  { title: 'Uniformes' },
+interface ItemType {
+  title: string;
+  description?: string;
+}
+
+const list: ItemType[] = [
+  {
+    title: 'Botiquines de primeros auxilios',
+    description:
+      'ibuprofeno y paracetamol NO necesitan mucho, mejor medicinas para niños, antibióticos, antisépticos, materiales estériles.',
+  },
+  {
+    title: 'Comida ( NO VIDRIO )',
+    description:
+      '¡Necesitamos desesperadamente productos sin lactosa y sin gluten, incluida la fórmula infantil sin lactosa!',
+  },
   { title: 'Ropa térmica' },
   { title: 'Mantas' },
   { title: 'Ropa de cama' },
-  { title: 'Comida ( NO VIDRIO )' },
+  {
+    title: 'Ropa / calzados de mujer, hombre, niños',
+    description:
+      'Ropa muy necesaria y elementos esenciales para recién nacidos, fórmula infantil.',
+  },
   { title: 'Agua' },
   { title: 'Platos desechable' },
-  { title: 'Botiquines de primeros auxilios' },
   { title: 'Materiales de construcción' },
   { title: 'Muebles' },
   { title: 'Colchoneta esterilla ' },
@@ -63,6 +79,12 @@ export const ItemsSection = () => {
                   {feature.title}
                 </p>
               </dt>
+
+              {feature.description && (
+                <dd className='mt-2 ml-9 text-base text-gray-500'>
+                  {feature.description}
+                </dd>
+              )}
             </div>
           ))}
         </dl>

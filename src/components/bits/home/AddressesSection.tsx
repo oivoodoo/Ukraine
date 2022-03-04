@@ -95,9 +95,7 @@ const addresses = [
           C/Josep Miquel Quintana 69 08950 Esplugues
         </a>
       </div>
-      <br />
-      Asociación Taras Shevchenko (Joan Cerezo) de lunes a viernes
-      <br />
+      <div>Asociación Taras Shevchenko (Joan Cerezo) de lunes a viernes</div>
       <div className='mt-2'>
         Tel.{' '}
         <a href='tel:651986943' className='text-gray-900 underline'>
@@ -134,6 +132,71 @@ const addresses = [
       <div>Instituto Salvador Seguí (Sant Martí)</div>
       <div>Escuela Ucraniana “Mriya” de lunes a sábado</div>
       <div>8:00-18:00</div>
+    </div>
+  ),
+  () => (
+    <div className='flex w-full flex-col space-y-4'>
+      <div className='text-center'>
+        <a
+          className='self-center text-center text-gray-900 no-underline hover:underline'
+          href='https://goo.gl/maps/w6RPFspHq4Xj5qhg8'
+        >
+          <FiMapPin
+            className='mx-auto text-center'
+            size={28}
+            width={28}
+            height={28}
+          />
+        </a>
+      </div>
+      <div>
+        <a
+          className='text-gray-900 underline hover:underline'
+          href='https://goo.gl/maps/w6RPFspHq4Xj5qhg8'
+        >
+          Carretera de Rubí, Km. 4, Sant Cugat
+        </a>
+      </div>
+      <div>Centre Jardineria Masó-Navarro</div>
+      <div>
+        Tel.{' '}
+        <a href='tel:600009748' className='text-gray-900 underline'>
+          600 009 748
+        </a>{' '}
+      </div>
+      <div>10:00-19:00, dom: 10:00-13:00</div>
+    </div>
+  ),
+  () => (
+    <div className='flex w-full flex-col space-y-4'>
+      <div className='text-center'>
+        <a
+          className='self-center text-center text-gray-900 no-underline hover:underline'
+          href='https://goo.gl/maps/w6RPFspHq4Xj5qhg8'
+        >
+          <FiMapPin
+            className='mx-auto text-center'
+            size={28}
+            width={28}
+            height={28}
+          />
+        </a>
+      </div>
+      <div>
+        <a
+          className='text-gray-900 underline hover:underline'
+          href='https://goo.gl/maps/VfYSoHNWNDm8XSSWA'
+        >
+          Avinguda del Pla del Vinyet, 81, 85, 08172, Sant Cugat
+        </a>
+      </div>
+      <div>Casal Torreblanca</div>
+      <div>
+        Tel.{' '}
+        <a href='tel:699802436' className='text-gray-900 underline'>
+          699 802 436
+        </a>{' '}
+      </div>
     </div>
   ),
 ];
