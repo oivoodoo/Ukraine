@@ -254,7 +254,7 @@ export const Address = ({ value }: { value: AddressType }) => {
   );
 };
 
-export const AddressSection = () => {
+export const AddressesSection = () => {
   return (
     <div className='mb-8 text-center'>
       <div className='mt-8 text-xl tracking-tight text-gray-900 lg:text-xl'>
@@ -321,7 +321,7 @@ export default function HomePage() {
 
             <ShareButtonsSection />
 
-            <AddressSection />
+            <AddressesSection />
           </div>
         </section>
       </main>
