@@ -5,7 +5,7 @@ const navigation = [
   {
     name: 'Telegram',
     href: 'https://t.me/tpusto',
-    icon: (props: any) => <TelegramIcon {...props} />,
+    icon: (props: any) => <TelegramIcon round {...props} />,
   },
 ];
 

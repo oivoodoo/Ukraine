@@ -25,10 +25,7 @@ const list: ItemType[] = [
     description:
       'Ropa muy necesaria y elementos esenciales para recién nacidos, ropa interior solo nueva',
   },
-  { title: 'Agua' },
   { title: 'Platos desechable' },
-  { title: 'Materiales de construcción' },
-  { title: 'Muebles' },
   { title: 'Colchoneta esterilla ' },
   { title: 'Tienda de campaña / colchones /sacos de dormir' },
   { title: 'Dispositivos para calentar carpas' },
@@ -40,22 +37,11 @@ const list: ItemType[] = [
   {
     title: 'Sillas de ruedas (niños y adultos), caminantes , rodillos, muletas',
   },
-  { title: 'Camas de hospital' },
   {
     title: 'Medios de comunicación (teléfonos móviles, walkie-talkies, radios)',
   },
   { title: 'Velas' },
   { title: 'Portátiles y tabletas con la máxima duración de batería posible' },
-  { title: 'Camas plegables' },
-  {
-    title:
-      'Recipiente para líquidos con la capacidad de 10-20 litros (bote de agua, combustible, gas)',
-  },
-  {
-    title:
-      'Municiones protectoras (cascos, chalecos antibalas, mochilas táctica, comida militar)',
-  },
-  { title: 'Gasolina, diesel, petróleo' },
 ];
 
 export const ItemsSection = () => {
