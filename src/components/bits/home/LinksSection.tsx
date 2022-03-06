@@ -10,7 +10,7 @@ interface LinkType {
   title: string;
   description: string;
   href: string;
-  icon: JSX.Element;
+  icon: () => JSX.Element;
   iconForeground: string;
   iconBackground: string;
 }
@@ -21,7 +21,7 @@ const actions = [
     href: 'https://icanhelp.host/',
     description:
       'Conectamos a los ucranianos que buscan refugio con personas en Europa dispuestas a ayudar',
-    icon: UsersIcon,
+    icon: () => <UsersIcon className='h-6 w-6' aria-hidden='true' />,
     iconForeground: 'text-sky-700',
     iconBackground: 'bg-sky-50',
   },
@@ -29,7 +29,7 @@ const actions = [
     title: 'Telegram INFO HELP',
     href: 'https://t.me/infohelpBCN',
     description: 'Canal de telegramas de Barcelona',
-    icon: TelegramIcon,
+    icon: () => <TelegramIcon className='h-6 w-6' aria-hidden='true' round />,
     iconForeground: 'text-sky-700',
     iconBackground: 'bg-sky-50',
   },
@@ -63,7 +63,7 @@ const Link = ({
             'inline-flex rounded-lg p-3 ring-4 ring-white'
           )}
         >
-          <action.icon className='h-6 w-6' aria-hidden='true' round />
+          {action.icon()}
         </span>
       </div>
       <div className='mt-8'>
