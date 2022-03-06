@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { AddressesSection } from '@/components/bits/home/AddressesSection';
 import { ItemsSection } from '@/components/bits/home/ItemsSection';
+import { LinksSection } from '@/components/bits/home/LinksSection';
 import { ShareButtonsSection } from '@/components/bits/ShareButtonsSection';
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
@@ -29,6 +30,8 @@ export default function HomePage() {
             <ShareButtonsSection />
 
             <AddressesSection />
+
+            <LinksSection />
           </div>
         </section>
       </main>

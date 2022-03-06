@@ -41,6 +41,12 @@ export default function Header() {
                   >
                     Puntos de recogida
                   </a>
+                  <a
+                    href='#links-section'
+                    className='inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                  >
+                    Sitios útiles
+                  </a>
                 </div>
               </div>
               <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
@@ -67,6 +73,13 @@ export default function Header() {
                 className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
               >
                 Puntos de recogida
+              </Disclosure.Button>
+              <Disclosure.Button
+                as='a'
+                href='#links-section'
+                className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
+              >
+                Sitios útiles
               </Disclosure.Button>
             </div>
           </Disclosure.Panel>
