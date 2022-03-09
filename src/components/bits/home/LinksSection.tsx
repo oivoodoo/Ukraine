@@ -33,6 +33,15 @@ const actions = [
     iconForeground: 'text-sky-700',
     iconBackground: 'bg-sky-50',
   },
+  {
+    title: 'EU',
+    href: 'https://ec.europa.eu/info/strategy/priorities-2019-2024/stronger-europe-world/eu-solidarity-ukraine/eu-assistance-ukraine/information-people-fleeing-war-ukraine_en',
+    description:
+      'Información para personas que huyen de la guerra en Ucrania',
+    icon: () => <UsersIcon className='h-6 w-6' aria-hidden='true' />,
+    iconForeground: 'text-sky-700',
+    iconBackground: 'bg-sky-50',
+  },
 ];
 
 const Link = ({
